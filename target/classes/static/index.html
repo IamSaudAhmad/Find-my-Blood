@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find My Blood — Donate Blood, Save Lives</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#register">Skip to registration form</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Find My Blood home">
+    <img src="assets/Find my Blood Logo.png" alt="Find My Blood Logo" class="brand-logo">
+    <span class="brand-name">Find My Blood</span>
+</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+      <a href="find-blood.html">Find My Blood</a>
+      <a href="account.html">My Account</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span></button>
+    <a href="#register" class="btn btn-primary nav-cta">Become a donor</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+    <a href="find-blood.html">Find My Blood</a>
+    <a href="account.html">My Account</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Connecting Donors, Saving lives</p>
+        <h1>Donate blood.<br>Save lives.</h1>
+        <p class="hero-lede">Find My Blood connects blood donors with people in need, making it easier to find the right blood group nearby when every second matters. Together, we can turn every donation into a chance to save a life.</p>
+        <div class="hero-actions">
+          <a href="#register" class="btn btn-primary btn-lg">Become a donor</a>
+          <a href="find-blood.html" class="btn btn-ghost btn-lg">Find My Blood</a>
+        </div>
+      </div></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="wrap about-inner">
+      <div class="about-text">
+        <h2>Bridging the gap between donors and those in need</h2>
+        <p>Find My Blood is a digital platform designed to connect blood donors with people who urgently need blood. By allowing users to search for available donors based on blood group and location, Find My Blood helps make the process of finding blood faster, simpler, and more accessible.</p>
+        <p>Our goal is to reduce the time and effort involved in finding a suitable blood donor. Whether you are looking for blood for a loved one or willing to donate, Find My Blood provides a simple way to connect people when every moment matters.</p>
+      </div>
+      <dl class="about-figures">
+        <div class="figure">
+          <dt>One Simple Mission</dt>
+          <dd>Connects donors with people in need</dd>
+        </div>
+        <div class="figure">
+          <dt>Blood Groups</dt>
+          <dd>All major 8 blood groups covered</dd>
+        </div>
+        <div class="figure">
+          <dt>Every Donation Matters</dt>
+          <dd>Help make livesaving connections possible</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <h2>What Find My Blood does</h2>
+      <div class="services-grid">
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+            <path d="M24 4c-8 12-16 20-16 30 0 9 7.2 14 16 14s16-5 16-14C40 24 32 16 24 4z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+          <h3>Blood donation</h3>
+          <p>Register once and get notified only when your blood group is needed nearby. Track your donation history over time.</p>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+            <circle cx="21" cy="21" r="14" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <line x1="31" y1="31" x2="42" y2="42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <h3>Find blood</h3>
+          <p>Search active donors by blood group and city when a family member or patient needs blood urgently.</p>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+            <path d="M24 6l16 8v10c0 11-7 18-16 20-9-2-16-9-16-20V14z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M18 24l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Donor registration</h3>
+          <p>A two-minute sign-up puts you on call for your city's hospitals. Update or pause your availability anytime.</p>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+            <path d="M24 4 6 12v10c0 12 7.6 20.6 18 22 10.4-1.4 18-10 18-22V12z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <line x1="24" y1="16" x2="24" y2="26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="32" r="1.6" fill="currentColor"/>
+          </svg>
+          <h3>Emergency help</h3>
+          <p>Post a critical request and reach every matching donor in your area within minutes, not hours.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DONOR REGISTRATION ============ -->
+  <section id="register" class="register">
+    <div class="wrap register-inner">
+      <div class="register-intro">
+        <p class="eyebrow">Your donation could be someone's second chance.</p>
+        <h2>Register as a donor</h2>
+        <p>Register your details to help people find you when your blood group is needed. You can update your availability anytime.</p>
+      </div>
+
+      <form id="donorForm" class="register-form" novalidate>
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g. Aditi Sharma" required>
+          <span class="field-error" id="err-fullName"></span>
+        </div>
+
+        <div class="field field-half">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" placeholder="18+" min="18" max="65" required>
+          <span class="field-error" id="err-age"></span>
+        </div>
+
+        <div class="field field-half">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+          </select>
+          <span class="field-error" id="err-gender"></span>
+        </div>
+
+        <div class="field field-half">
+          <label for="bloodGroup">Blood group</label>
+          <select id="bloodGroup" name="bloodGroup" required>
+            <option value="" disabled selected>Select</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+          </select>
+          <span class="field-error" id="err-bloodGroup"></span>
+        </div>
+
+        <div class="field field-half">
+          <label for="mobile">Mobile number</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" inputmode="numeric" required>
+          <span class="field-error" id="err-mobile"></span>
+        </div>
+
+        <div class="field field-half">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="e.g. Nagpur" required>
+          <span class="field-error" id="err-city"></span>
+        </div>
+
+        <div class="field">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Street, area" required>
+          <span class="field-error" id="err-address"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg register-submit">Register as donor</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <h2>Contact Find My Blood</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">Emergency line</span>
+          <a href="tel:+911800123456">1800-123-456</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:asaud0349@gmail.com">asaud0349@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Office</span>
+          <span>Near Anjuman College of Engineering and Technology, Mangalwari Bazar Rd, Sadar Nagpur</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand">
+      <img src="assets/Find my Blood Logo.png" alt="Find My Blood Logo" class="brand-logo">
+      <span class="brand-name">Find My Blood</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-note">&copy; 2026 Find My Blood. Every donor is a hero for someone.</p>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="theme.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

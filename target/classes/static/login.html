@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — Find My Blood</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/Find my Blood Logo.png" alt="Find My Blood Logo" class="brand-logo">
+      <span class="brand-name">Find My Blood</span>
+    </a>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span></button>
+  </div>
+</header>
+
+<main>
+  <section class="login-section">
+    <div class="wrap login-wrap">
+      <div class="login-card">
+
+        <div class="auth-tabs" role="tablist">
+          <button type="button" class="auth-tab active" id="tabLogin" role="tab" aria-selected="true">Log in</button>
+          <button type="button" class="auth-tab" id="tabSignup" role="tab" aria-selected="false">Sign up</button>
+        </div>
+
+        <!-- ============ LOG IN PANEL ============ -->
+        <div id="panelLogin" class="auth-panel">
+          <p class="eyebrow">Welcome back</p>
+          <h1 class="login-title">Log in</h1>
+          <p class="login-lede">Access registered donors and incoming blood requests.</p>
+
+          <form id="loginForm" class="login-form" novalidate>
+            <div class="field">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" name="password" placeholder="••••••••" required autocomplete="current-password">
+            </div>
+
+            <p class="login-error" id="loginError" role="alert"></p>
+
+            <button type="submit" class="btn btn-primary btn-lg login-submit">Log in</button>
+          </form>
+        </div>
+
+        <!-- ============ SIGN UP PANEL ============ -->
+        <div id="panelSignup" class="auth-panel" hidden>
+          <p class="eyebrow">New here</p>
+          <h1 class="login-title">Create an account</h1>
+          <p class="login-lede">Sign up with your details to get started.</p>
+
+          <form id="signupForm" class="login-form" novalidate>
+            <div class="field">
+              <label for="signupName">Full name</label>
+              <input type="text" id="signupName" name="name" placeholder="e.g. Aditi Sharma" required>
+            </div>
+
+            <div class="field">
+              <label for="signupEmail">Email</label>
+              <input type="email" id="signupEmail" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="signupPhone">Phone number</label>
+              <input type="tel" id="signupPhone" name="phone" placeholder="10-digit number" inputmode="numeric" required>
+            </div>
+
+            <div class="field">
+              <label for="signupPassword">Password</label>
+              <input type="password" id="signupPassword" name="password" placeholder="At least 6 characters" required autocomplete="new-password">
+            </div>
+
+            <label class="terms-check" for="termsAccepted">
+              <input type="checkbox" id="termsAccepted" name="termsAccepted">
+              <span>I agree to the <a href="#terms" id="termsLink">Terms &amp; Conditions</a> and consent to Find My Blood collecting and using my personal information to provide donor/request services.</span>
+            </label>
+
+            <p class="login-error" id="signupError" role="alert"></p>
+
+            <button type="submit" class="btn btn-primary btn-lg login-submit">Sign up</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand footer-brand" aria-label="Find My Blood logo area">
+      <img src="assets/Find my Blood Logo.png" alt="Find My Blood Logo" class="brand-logo">
+      <span class="brand-name">Find My Blood</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#register">Register</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="find-blood.html">Find My Blood</a>
+    </nav>
+    <p class="footer-note">&copy; 2026 Find My Blood. Every donor is a hero for someone.</p>
+  </div>
+</footer>
+
+<div id="terms" class="terms-note"><strong>Terms &amp; Conditions</strong><p>Your information is used for account creation, donor matching, contact, and blood-request services. Keep your information accurate. Do not use the service for unlawful or misleading requests.</p></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="theme.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
